@@ -1,6 +1,9 @@
-# Bee Swarm (TCP prototype)
+# Bee-hive
+Interconnected network of computers.
 
-Minimal 4-bee swarm simulation with a queen authority over TCP sockets. Bees connect to the queen, register, and exchange messages routed by the queen.
+## Bee Swarm (TCP prototype)
+Minimal 4-bee swarm simulation with a queen authority over TCP sockets. Bees
+connect to the queen, register, and exchange messages routed by the queen.
 
 ## Structure
 - bin: compiled binaries
@@ -10,6 +13,7 @@ Minimal 4-bee swarm simulation with a queen authority over TCP sockets. Bees con
 - include: protocol notes
 - configs: example env files
 - logs: placeholder for runtime logs
+- models/version-1.0.0.2-md: Python model + Docker setup
 
 ## Build
 ```
@@ -45,7 +49,6 @@ Example:
 
 ## Bee shell
 On startup the bee opens a shell but does not connect until you run `start`.
-
 ```
 help
 start
@@ -61,7 +64,8 @@ quit
 ```
 
 ## Custom commands
-You can add simple commands in `configs/bee_commands.json`. These are loaded at startup or via `reload`.
+You can add simple commands in `configs/bee_commands.json`. These are loaded
+at startup or via `reload`.
 
 Example file:
 ```
