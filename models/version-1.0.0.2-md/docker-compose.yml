@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  queen:
+    build: .
+    command: ["python3", "main.py", "queen", "--host", "0.0.0.0", "--port", "9000", "--admin", "--no-ui"]
+    ports:
+      - "9000:9000"
+
+  bee:
+    build: .
+    depends_on:
+      - queen
+    environment:
+      - BEE_CODENAME=worker
+    command: ["python3", "main.py", "bee", "--queen-host", "queen", "--queen-port", "9000", "--commands", "commands.json", "--no-ui", "--db", "/tmp/bee.db"]

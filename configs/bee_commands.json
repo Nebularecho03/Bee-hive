@@ -1,0 +1,5 @@
+[
+  {"name": "hello", "action": "broadcast", "payload": "hello from {id}"},
+  {"name": "status", "action": "broadcast", "payload": "status?"},
+  {"name": "pingall", "action": "broadcast", "payload": "ping"}
+]

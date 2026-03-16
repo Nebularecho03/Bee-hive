@@ -1,0 +1,9 @@
+markdown-it-py==4.0.0
+mdurl==0.1.2
+numpy==2.4.3
+pandas==3.0.1
+Pygments==2.19.2
+python-dateutil==2.9.0.post0
+rich==14.3.3
+six==1.17.0
+rich>=13.7.0
